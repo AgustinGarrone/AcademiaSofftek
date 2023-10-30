@@ -77,7 +77,15 @@ public class TodoList {
             }
             System.out.println();
             System.out.println(tasks.size() + 1 + " - Volver atras");
-            int deletedTask = scanner.nextInt();
+            //Inicializamos numero que ingresa usuario
+            int deletedTask;
+            //Verificamos que ingrese un numero o atrapamos excepciones
+            try {
+                deletedTask = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Error. Intente nuevamente");
+                return false;
+            }
             //Verificamos que el numero ingresado corresponda a la opcion de salir o a una tarea válida
             if (deletedTask == tasks.size()+ 1) {
                 return false;
