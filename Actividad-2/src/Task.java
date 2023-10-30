@@ -2,27 +2,27 @@ import java.util.Date;
 
 public class Task {
 
-    private String name;
+    private String title;
     private String description;
     private Boolean completed;
     private Date created;
     private Date until;
 
 
-    public Task(String name, String description, Boolean completed,  Date until) {
-        this.name = name;
+    public Task(String title, String description, Boolean completed,  Date until) {
+        this.title = title;
         this.description = description;
         this.completed = completed;
         this.created = new Date(System.currentTimeMillis());
         this.until = until;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
