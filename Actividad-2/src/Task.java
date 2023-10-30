@@ -56,4 +56,8 @@ public class Task {
     public void setUntil(Date until) {
         this.until = until;
     }
+
+    public void markAsCompleted () {
+        this.completed = true;
+    }
 }
